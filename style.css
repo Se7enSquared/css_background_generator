@@ -45,12 +45,14 @@ h3 {
 
 
 input[type="color"]{
-    transform: scale(1.5);
+    display: flex;
+    float: left;
+    transform: scale(2);
     margin: 25px;
 }
 
 input[type="radio"]{
-    display: inline-block;
+
     transform: scale(2);
     margin-left: 10px;
 }
