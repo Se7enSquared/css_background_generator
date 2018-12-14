@@ -1,0 +1,63 @@
+html{
+    height: 100%;
+}
+
+body{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    background: linear-gradient(to right,#80ffff, #80ff80);
+    /* background-repeat: no-repeat; */
+}
+
+h1{
+    font-size: 5em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.btn{
+    margin-top: 20px;
+    
+}
+
+.radiogroup{
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.25em;
+    width: 22%;
+    padding: 10px;
+}
+
+input[type="color"]{
+    transform: scale(2);
+    margin: 25px;
+}
+
+#direction {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    display: block;
+    margin:  0 auto 20px auto;
+    width: 400px;
+}
+
+#cssoutput {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 0;
+}
