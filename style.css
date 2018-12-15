@@ -4,7 +4,7 @@ html{
 
 body{
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
@@ -19,7 +19,7 @@ h1{
 h2 {
     font-size: 2em;
     font-style: italic;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 }
 
 h3 {
@@ -30,25 +30,10 @@ h3 {
     font-size: 1.5em;
 }
 
-.btn{
-    margin-top: 20px;
-    
-}
-
-.radiogroup{
-    margin: 0 auto;
-    text-align: left;
-    font-size: 1.25em;
-    width: 22%;
-    padding: 10px;
-}
-
-
 input[type="color"]{
-    display: flex;
-    float: left;
     transform: scale(2);
-    margin: 25px;
+    margin: 0 22px;
+    min-width: 40px;
 }
 
 input[type="radio"]{
@@ -63,35 +48,50 @@ input[type="radio"]{
 }
 
 textarea{
-    display: block;
     margin:  0 auto 20px auto;
-    width: 550px;
-    height: 50px;
+    width: 250px;
+    height: 75px;
     padding: 10px;
 }
 
-#cssoutput {
-    margin-bottom: 0;
-    margin-top: 20px;
-    padding: 0;
+div.container.buttons{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radiobtn{
+    display: flex;
+    width: 100%;
+    margin: auto 0;
+}
+
+.colorselect, .radiobtn, .btn{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.25em;
+    min-width: 30%;
+    padding: 10px;
 }
 
 .btn{
-    display: flex;
+    max-width: 100px;
+    margin: 10px;
+
+}
+
+div.buttons{
+    max-width: 400px;
+    margin: 0;
     justify-content: center;
-
-}
-
-.container{
-    display: inline;
-}
-
-footer{
-   position:absolute;
-   bottom:0;
-   width:50%;
-   margin: auto;
-   height:60px;
 }
 
 @media (max-width: 700px) {
@@ -99,12 +99,31 @@ footer{
         display: flex;
         float: left;
         transform: scale(1);
-        margin: 25px;
+        margin: 10px;
     }
-    
+
+    textarea{
+        width: 250px;
+        height: 100px;
+        padding: 5px;
+    }
+
+    label{
+        font-size: 12px;
+    }
     input[type="radio"]{
-    
         transform: scale(1);
         margin-left: 10px;
     }
- }
+
+    h1{
+        font-size: 2em;
+        letter-spacing: 1.5px;
+    }
+
+    h2 {
+        font-size: 1em;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+}
